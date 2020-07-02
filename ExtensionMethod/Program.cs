@@ -1,8 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ExtensionMethod
 {
@@ -10,12 +6,13 @@ namespace ExtensionMethod
     {
         static void Main(string[] args)
         {
-            // The code provided will print ‘Hello World’ to the console.
-            // Press Ctrl+F5 (or go to Debug > Start Without Debugging) to run your app.
-            Console.WriteLine("Hello World!");
-            Console.ReadKey();
+            DateTime dt = new DateTime(2018, 11, 16, 8, 10, 45);
+            Console.WriteLine(dt.ElapsedTime());
 
-            // Go to http://aka.ms/dotnet-get-started-console to continue learning how to build a console app! 
+            String s1 = "Good morning dear students!";
+            Console.WriteLine(s1.Cut(10));
+
+            Console.ReadLine();
         }
     }
 }
